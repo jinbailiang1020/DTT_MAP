@@ -1,0 +1,2 @@
+include ':app', ':okhttputils', ':jxlhelper-core'
+project(':okhttputils').projectDir = new File('okhttputils1')

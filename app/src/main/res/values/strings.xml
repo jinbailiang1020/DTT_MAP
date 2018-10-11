@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DTT</string>
+    <string name="update_hint">提示：把excel文件编辑好，放入手机，点击我选择文件找到你的excel文件，再点击更新；\n手动编辑的excel格式必须按下图所示，经纬度都写0，excel页面名称必须是默认的Sheet1;\n有问题再找我哦。</string>
+</resources>

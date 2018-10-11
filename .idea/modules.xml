@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DTT_MAP.iml" filepath="$PROJECT_DIR$/DTT_MAP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jxlhelper-core/jxlhelper-core.iml" filepath="$PROJECT_DIR$/jxlhelper-core/jxlhelper-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/okhttputils1/okhttputils.iml" filepath="$PROJECT_DIR$/okhttputils1/okhttputils.iml" />
+    </modules>
+  </component>
+</project>

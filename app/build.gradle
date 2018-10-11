@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            keyPassword 'jinbailiang'
+            storeFile file('D:/Android_Projects/jin.jks')
+            storePassword 'jinbailiang'
+        }
+    }
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.dttmap.thank"
+        minSdkVersion 23
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+            //说明so的路径为该libs路径，关联所有地图SDK的so文件
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    compile files('libs/BaiduLBS_Android.jar')
+    //    compile project(':okhttputils')
+    implementation 'com.zhy:okhttputils:2.0.0'
+    compile 'com.google.code.gson:gson:2.8.1'
+    implementation project(':jxlhelper-core')
+    compile project(path: ':jxlhelper-core')
+}
